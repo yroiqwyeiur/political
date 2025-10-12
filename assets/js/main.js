@@ -1,6 +1,7 @@
 import { translations } from "./data/translations.js";
 import { eventData } from "./data/events.js";
 import { I18n } from "./i18n.js";
+import { initAnalytics, trackEvent, trackPageView } from "./analytics.js";
 
 const DEFAULT_LOCALE = document.documentElement.dataset.defaultLocale || "en";
 const STORAGE_KEY = "pnp-preferred-locale";
@@ -224,10 +225,13 @@ function setLocale(locale) {
   const newUrl = `${window.location.pathname}?${query}${hash}`;
   window.history.replaceState({}, "", newUrl);
   safeStoreLocale(resolved);
+  trackPageView();
+  return resolved;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
+  initAnalytics();
 
   const initialLocale = getInitialLocale();
   bindFilters();
@@ -235,7 +239,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (languageSwitcher) {
     languageSwitcher.addEventListener("change", (event) => {
       if (event.target instanceof HTMLSelectElement) {
-        setLocale(event.target.value);
+        const updatedLocale = setLocale(event.target.value);
+        trackEvent("change_locale", { value: updatedLocale });
       }
     });
   }

@@ -16,3 +16,12 @@
 2. 在仓库的 Settings → Pages 中，将 Source 设为 `main` 分支的 `/` 根目录。
 3. 保存后几分钟内，GitHub Pages 将在 `https://<your-username>.github.io/<repository>/political/` 提供线上版本。
 4. 如需中文作为默认语言，可在访问地址后追加 `?lang=zh-CN`，或在页面右上角切换语言。
+
+## 访问统计配置
+
+项目内置对 Google Analytics 4 的支持，统计数据会持久保存到你的 GA4 资源中。
+
+1. 在 [Google Analytics](https://analytics.google.com/) 中创建 GA4 属性，并记录其 Measurement ID（格式类似 `G-XXXXXXXXXX`）。
+2. 编辑 `index.html` 顶部 `<html>` 标签，将 `data-ga-id=""` 替换为你的 Measurement ID。
+3. 部署到 GitHub Pages 后即可在 GA4 后台看到实时访问数据；在本地调试时也会向 GA4 发送页面浏览事件。
+4. 如需关闭统计，将 `data-ga-id` 清空或移除 `data-analytics-provider` 属性即可。
