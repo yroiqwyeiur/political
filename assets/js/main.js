@@ -163,35 +163,68 @@ function renderEvents(data, locale) {
     const wrapper = document.createElement("article");
     wrapper.className = "event-card";
 
-    const sourcesMarkup = event.sources
-      .map(
-        (source) =>
-          `<a href="${source.url}" rel="noopener noreferrer" target="_blank">${source.label}</a>`
-      )
-      .join(" · ");
+    const header = document.createElement("header");
+    const title = document.createElement("h3");
+    title.textContent = event.title;
+    header.appendChild(title);
+    wrapper.appendChild(header);
 
-    wrapper.innerHTML = `
-      <header>
-        <h3>${event.title}</h3>
-      </header>
-      <div class="event-meta">
-        <span>${formatDate(event.datetime, locale)}</span>
-        <span>${event.location}</span>
-        <span>${event.categories
-          .map((category) => `<span class="tag">${category}</span>`)
-          .join("")}</span>
-        <span class="heat-pill">${i18n.translate("events.heatLabel", locale)} ${event.heat}</span>
-      </div>
-      <p>${event.summary}</p>
-      ${
-        event.sources.length
-          ? `<div class="event-sources"><strong>${i18n.translate(
-              "events.sourcesPrefix",
-              locale
-            )}</strong> ${sourcesMarkup}</div>`
-          : ""
-      }
-    `;
+    const meta = document.createElement("div");
+    meta.className = "event-meta";
+
+    const datetime = document.createElement("span");
+    datetime.textContent = formatDate(event.datetime, locale);
+    meta.appendChild(datetime);
+
+    const location = document.createElement("span");
+    location.textContent = event.location;
+    meta.appendChild(location);
+
+    const categoriesWrapper = document.createElement("span");
+    event.categories.forEach((category) => {
+      const tag = document.createElement("span");
+      tag.className = "tag";
+      tag.textContent = category;
+      categoriesWrapper.appendChild(tag);
+    });
+    meta.appendChild(categoriesWrapper);
+
+    const heat = document.createElement("span");
+    heat.className = "heat-pill";
+    heat.textContent = `${i18n.translate("events.heatLabel", locale)} ${event.heat}`;
+    meta.appendChild(heat);
+
+    wrapper.appendChild(meta);
+
+    const summary = document.createElement("p");
+    summary.textContent = event.summary;
+    wrapper.appendChild(summary);
+
+    if (event.sources.length) {
+      const sourcesContainer = document.createElement("div");
+      sourcesContainer.className = "event-sources";
+
+      const prefix = document.createElement("strong");
+      prefix.textContent = i18n.translate("events.sourcesPrefix", locale);
+      sourcesContainer.appendChild(prefix);
+
+      event.sources.forEach((source, index) => {
+        if (index > 0) {
+          sourcesContainer.appendChild(document.createTextNode(" · "));
+        } else {
+          sourcesContainer.appendChild(document.createTextNode(" "));
+        }
+
+        const link = document.createElement("a");
+        link.href = source.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = source.label;
+        sourcesContainer.appendChild(link);
+      });
+
+      wrapper.appendChild(sourcesContainer);
+    }
 
     eventList.appendChild(wrapper);
   });
