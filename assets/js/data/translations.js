@@ -64,6 +64,49 @@ export const translations = {
       "Police deploy extralegal measures—soft detention, residential surveillance, community grid control—under quota pressure.",
     "law.analysis.3.point2":
       "Stability funds finance private thugs and surveillance tech; victims rarely find a court or agency willing to register complaints.",
+    "law.sources.label": "Sources",
+    "law.analysis.1.source1": "HRW: Abolish shuanggui interrogation",
+    "law.analysis.1.source2": "Reuters: China’s new graft watchdog detains 30,000+",
+    "law.analysis.2.source1": "CFR: China’s Rule of Law",
+    "law.analysis.2.source2": "HRW: State interference with lawyers",
+    "law.analysis.3.source1": "Brookings: Stability maintenance and weiwen",
+    "law.analysis.3.source2": "RFA: Soaring weiwen budgets",
+    "law.deep.1.title": "Archive regime: ranked for life and death",
+    "law.deep.1.body":
+      "Parallel cadre, personnel, party, and student dossiers record ideology, family background, and faith. These files decide access to government jobs, military enlistment, and even funeral protocol.",
+    "law.deep.1.point1":
+      "Political vetting offers no appeal; one relative tagged as sensitive downgrades the whole household.",
+    "law.deep.1.point2":
+      "Even after death, approval from Party organs is required before obituaries or memorials are allowed.",
+    "law.deep.1.source1": "China Digital Times: Political vetting manual",
+    "law.deep.1.source2": "SCMP: Students screened for political loyalty",
+    "law.deep.2.title": "Liuzhi detention: black jails in legal costume",
+    "law.deep.2.body":
+      "Liuzhi replaced shuanggui in name only. Targets vanish into secret sites, cut off from family and lawyers, interrogated under cameras controlled by Party inspectors.",
+    "law.deep.2.point1":
+      "Evidence files are assembled inside the site before prosecutors ever see the case.",
+    "law.deep.2.point2":
+      "Local stability offices borrow liuzhi rooms to disappear petitioners and activists beyond judicial reach.",
+    "law.deep.2.source1": "Reuters: Torture fears in liuzhi system",
+    "law.deep.2.source2": "HRW: Supervision law undermines rights",
+    "law.deep.3.title": "Grid management and scoring: digital shackles",
+    "law.deep.3.body":
+      "Cities are split into micro-grids where wardens and AI cameras log every ‘abnormal’ act. Administrative penalties feed credit databases, creating hidden blacklists for loans, travel, and exit.",
+    "law.deep.3.point1":
+      "Police push real-time alerts on ‘key persons’ to neighbourhood teams, demanding door knocks within minutes.",
+    "law.deep.3.point2":
+      "Filing petitions, labour disputes, or pandemic complaints counts as negative credit that is nearly impossible to erase.",
+    "law.deep.3.source1": "CFR: China’s social credit system",
+    "law.deep.3.source2": "China Digital Times: Grid management notes",
+    "law.deep.4.title": "Administrative bans: freedom lost without verdicts",
+    "law.deep.4.body":
+      "Public security, tax, and market regulators can fine, freeze assets, or bar travel without court orders. Travellers learn of exit bans at the airport yet cannot locate the issuing agency.",
+    "law.deep.4.point1":
+      "Interlinked watchlists trap lawyers, reporters, and investors in the country for years.",
+    "law.deep.4.point2":
+      "Administrative reviews drag on for months while courts refuse cases by citing state security.",
+    "law.deep.4.source1": "Reuters: China’s expanding exit bans",
+    "law.deep.4.source2": "HRW: Lift unfair exit bans",
     "law.fact.title": "System snapshot",
     "law.fact.keyInstitutions": "Key bodies",
     "law.fact.keyInstitutions.value":
@@ -189,6 +232,41 @@ export const translations = {
       "维稳命令像紧急法令却从不公开。访民、业主、网民被列入风险清单，随时触发黑名单、限制出境或强制送医。",
     "law.analysis.3.point1": "公安在考核压力下动用软禁、指定居所监视居住、网格化管控等法外措施。",
     "law.analysis.3.point2": "维稳经费养活保安黑手与监控科技，受害者几乎找不到愿意立案的机关。",
+    "law.sources.label": "证据",
+    "law.analysis.1.source1": "人权观察：废除“双规”酷刑体系",
+    "law.analysis.1.source2": "路透社：国家监察委留置逾三万人",
+    "law.analysis.2.source1": "美国外交关系协会：中国的“依法治国”真相",
+    "law.analysis.2.source2": "人权观察：律师执业遭国家干预",
+    "law.analysis.3.source1": "布鲁金斯学会：维稳机制解析",
+    "law.analysis.3.source2": "自由亚洲电台：维稳经费居高不下",
+    "law.deep.1.title": "档案体系：生前身后都被评级",
+    "law.deep.1.body":
+      "干部、人事、党员、学生四套档案并行，记录思想表现、家庭背景、信仰状况。档案决定能否考公、参军、升学，甚至左右丧葬仪式。",
+    "law.deep.1.point1": "“政审”缺乏申诉渠道，亲属一旦被贴“敏感”标签，全家集体降级。",
+    "law.deep.1.point2": "党员身后仍需组织审批才能刊登讣告、举行告别式等基本仪式。",
+    "law.deep.1.source1": "中国数字时代：保密政审手册",
+    "law.deep.1.source2": "南华早报：公安院校政审严审学生",
+    "law.deep.2.title": "留置体系：披着合法外衣的黑狱",
+    "law.deep.2.body":
+      "“留置”取代双规仅换了名号，被带走者与家属隔绝，律师无权介入，讯问录音录像掌握在纪委手中。",
+    "law.deep.2.point1": "案件移交检方前，证据与口供已在留置点内被诱导或伪造完毕。",
+    "law.deep.2.point2": "地方维稳办借用留置设施关押访民与维权人士，完全绕开司法监督。",
+    "law.deep.2.source1": "路透社：留置体系引发酷刑担忧",
+    "law.deep.2.source2": "人权观察：监察法进一步侵蚀权利",
+    "law.deep.3.title": "网格化与信用分：数字化镣铐",
+    "law.deep.3.body":
+      "城市被切分成密集网格，网格员与AI摄像头记录一切“异常”。行政处罚与征信挂钩，形成贷款、购票、出境的隐形黑名单。",
+    "law.deep.3.point1": "公安把“重点人”实时推送给社区，要求几分钟内上门实施“敲门行动”。",
+    "law.deep.3.point2": "信访、劳资纠纷乃至疫情投诉都会被算作负面信用，几乎终身无法洗脱。",
+    "law.deep.3.source1": "美国外交关系协会：中国社会信用体系",
+    "law.deep.3.source2": "中国数字时代：网格化管理笔记",
+    "law.deep.4.title": "行政禁令：无判决也可失去自由",
+    "law.deep.4.body":
+      "公安、税务、市监可直接开罚、冻结资产或限制出境，无需法院裁定。旅客在机场才得知被边控，却找不到签发部门。",
+    "law.deep.4.point1": "多重黑名单互联，让律师、记者、投资者多年无法离境。",
+    "law.deep.4.point2": "行政复议久拖不决，法院以“涉国安”为由拒绝立案。",
+    "law.deep.4.source1": "路透社：中国扩大出境禁令",
+    "law.deep.4.source2": "人权观察：取消不公出境禁令",
     "law.fact.title": "制度速览",
     "law.fact.keyInstitutions": "关键机构",
     "law.fact.keyInstitutions.value": "中共中央政法委、国家监委、中央政法委员会",
