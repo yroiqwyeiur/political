@@ -212,5 +212,34 @@ export const eventData = [
         ]
       }
     }
+  },
+  {
+    id: "evt-009",
+    datetime: "2022-10-13T08:00:00+08:00",
+    heat: 89,
+    locales: {
+      en: {
+        title: "Peng Zaizhou Manifesto Circulates Online",
+        location: "Online underground networks",
+        categories: ["Individual resistance", "Digital dissent"],
+        summary:
+          "An anonymous call to action signed \"Peng Zaizhou\" spread across Telegram and WeChat groups, detailing anti-Xi slogans and tactics that preceded the Sitong Bridge banner protest.",
+        sources: [
+          { label: "China Digital Times archive", url: "#" },
+          { label: "Rest of World report", url: "#" }
+        ]
+      },
+      "zh-CN": {
+        title: "彭载舟宣言网络扩散",
+        location: "线上地下网络",
+        categories: ["个人反抗", "数字抵抗"],
+        summary:
+          "署名“彭载舟”的行动倡议在 Telegram、微信群迅速传播，提出反对清零与独裁的口号与行动指南，为四通桥横幅抗议铺垫声势。",
+        sources: [
+          { label: "中国数字时代存档", url: "#" },
+          { label: "Rest of World 报道", url: "#" }
+        ]
+      }
+    }
   }
 ];
