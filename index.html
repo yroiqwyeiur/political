@@ -35,45 +35,27 @@
           >
             Menu
           </button>
-          <ul id="site-nav" class="navigation">
+          <ul id="site-nav" class="navigation" role="tablist">
             <li>
-              <a href="#intro" target="_blank" rel="noopener noreferrer" data-i18n="nav.overview"
-                >Overview</a
-              >
+              <a href="#intro" data-module-target="intro" data-i18n="nav.overview">Overview</a>
             </li>
             <li>
-              <a href="#law" target="_blank" rel="noopener noreferrer" data-i18n="nav.law"
-                >Legal System</a
-              >
+              <a href="#law" data-module-target="law" data-i18n="nav.law">Legal System</a>
             </li>
             <li>
-              <a href="#military" target="_blank" rel="noopener noreferrer" data-i18n="nav.military"
-                >Military System</a
-              >
+              <a href="#military" data-module-target="military" data-i18n="nav.military">Military System</a>
             </li>
             <li>
-              <a href="#education" target="_blank" rel="noopener noreferrer" data-i18n="nav.education"
-                >Education System</a
-              >
+              <a href="#education" data-module-target="education" data-i18n="nav.education">Education System</a>
             </li>
             <li>
-              <a href="#victims" target="_blank" rel="noopener noreferrer" data-i18n="nav.victims"
-                >Persecuted Groups</a
-              >
+              <a href="#victims" data-module-target="victims" data-i18n="nav.victims">Persecuted Groups</a>
             </li>
             <li>
-              <a href="#events" target="_blank" rel="noopener noreferrer" data-i18n="nav.events"
-                >Incident Tracker</a
-              >
+              <a href="#events" data-module-target="events" data-i18n="nav.events">Incident Tracker</a>
             </li>
             <li>
-              <a
-                href="#get-involved"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-i18n="nav.getInvolved"
-                >Take Action</a
-              >
+              <a href="#get-involved" data-module-target="get-involved" data-i18n="nav.getInvolved">Take Action</a>
             </li>
           </ul>
         </nav>
@@ -90,26 +72,20 @@
     </header>
 
     <main>
-      <section id="intro" class="hero">
+      <section id="intro" class="hero module-section" data-module="intro">
         <div class="container">
           <h2 data-i18n="hero.heading">If the CCP does not fall, the Chinese people remain enslaved.</h2>
           <p data-i18n="hero.body">
             The platform combines historical records, institutional analysis, and first-person testimony to surface the CCP's deep governance logic: the Party outranks the state, party discipline outruns the law, and state power is always ready to strip citizens of their rights. We cover structures, organizations, and lived experiences.
           </p>
           <div class="cta-group">
-            <a
-              class="btn primary"
-              href="#events"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n="hero.primaryCta"
+            <a class="btn primary" href="#events" data-module-target="events" data-i18n="hero.primaryCta"
               >Explore the incident tracker</a
             >
             <a
               class="btn secondary"
               href="#law"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-module-target="law"
               data-i18n="hero.secondaryCta"
               >Browse featured analysis</a
             >
@@ -117,21 +93,14 @@
         </div>
       </section>
 
-      <section class="pillars">
+      <section class="pillars module-section" data-module="intro">
         <div class="container grid">
           <article class="card">
             <h3 data-i18n="pillars.law.title">Legal system</h3>
             <p data-i18n="pillars.law.body">
               Party discipline trumps civil law. Layered hierarchies—inside and outside the Party—keep everyone captive to hidden chains of power.
             </p>
-            <a
-              href="#law"
-              class="more"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n="pillars.law.more"
-              >Learn more</a
-            >
+            <a href="#law" class="more" data-module-target="law" data-i18n="pillars.law.more">Learn more</a>
           </article>
           <article class="card">
             <h3 data-i18n="pillars.military.title">Military system</h3>
@@ -141,8 +110,7 @@
             <a
               href="#military"
               class="more"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-module-target="military"
               data-i18n="pillars.military.more"
               >Learn more</a
             >
@@ -155,8 +123,7 @@
             <a
               href="#education"
               class="more"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-module-target="education"
               data-i18n="pillars.education.more"
               >Learn more</a
             >
@@ -169,8 +136,7 @@
             <a
               href="#victims"
               class="more"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-module-target="victims"
               data-i18n="pillars.victims.more"
               >Learn more</a
             >
@@ -178,7 +144,7 @@
         </div>
       </section>
 
-      <section id="law" class="section">
+      <section id="law" class="section module-section" data-module="law">
         <div class="container split">
           <div>
             <h2 data-i18n="law.title">Legal system: party discipline eclipses the law</h2>
@@ -412,7 +378,7 @@
         </div>
       </section>
 
-      <section id="military" class="section alt">
+      <section id="military" class="section alt module-section" data-module="military">
         <div class="container split">
           <aside class="fact-box">
             <h3 data-i18n="military.fact.title">Power structure</h3>
@@ -439,7 +405,7 @@
         </div>
       </section>
 
-      <section id="education" class="section">
+      <section id="education" class="section module-section" data-module="education">
         <div class="container split">
           <div>
             <h2 data-i18n="education.title">Education system: manufacturing loyalty and amnesia</h2>
@@ -462,7 +428,7 @@
         </div>
       </section>
 
-      <section id="victims" class="section alt">
+      <section id="victims" class="section alt module-section" data-module="victims">
         <div class="container">
           <h2 data-i18n="victims.title">Persecuted groups: confronting lived destinies</h2>
           <p class="section-lead" data-i18n="victims.body">
@@ -493,7 +459,7 @@
         </div>
       </section>
 
-      <section id="events" class="section">
+      <section id="events" class="section module-section" data-module="events">
         <div class="container">
           <div class="section-heading">
             <div>
@@ -532,7 +498,7 @@
         </div>
       </section>
 
-      <section id="get-involved" class="section alt">
+      <section id="get-involved" class="section alt module-section" data-module="get-involved">
         <div class="container callout">
           <h2 data-i18n="getInvolved.title">Guard memory and truth together</h2>
           <p data-i18n="getInvolved.body">

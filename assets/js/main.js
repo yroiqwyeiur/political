@@ -14,6 +14,10 @@ const eventList = document.getElementById("event-list");
 const languageSwitcher = document.getElementById("language-switcher");
 
 let localizedEvents = [];
+let moduleSections = [];
+let moduleTriggers = [];
+let navModuleTriggers = [];
+let activeModule = null;
 
 function safeGetStoredLocale() {
   try {
@@ -61,6 +65,105 @@ function updateLocalizedEvents(locale) {
       sources: localeData.sources.map((source) => ({ ...source }))
     };
   });
+}
+
+function activateModule(moduleName, options = {}) {
+  if (!moduleName || !moduleSections.length) return;
+  const normalized = moduleName.trim();
+  if (!normalized || normalized === activeModule) {
+    if (options.scroll && normalized === activeModule) {
+      const currentSections = moduleSections.filter(
+        (section) => section.dataset.module === normalized
+      );
+      currentSections[0]?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    return;
+  }
+
+  const matchedSections = moduleSections.filter(
+    (section) => section.dataset.module === normalized
+  );
+
+  if (!matchedSections.length) return;
+
+  moduleSections.forEach((section) => {
+    const isMatch = section.dataset.module === normalized;
+    section.classList.toggle("is-active", isMatch);
+    if (isMatch) {
+      section.removeAttribute("aria-hidden");
+    } else {
+      section.setAttribute("aria-hidden", "true");
+    }
+  });
+
+  navModuleTriggers.forEach((trigger) => {
+    const isMatch = trigger.dataset.moduleTarget === normalized;
+    trigger.classList.toggle("is-active", isMatch);
+    trigger.setAttribute("aria-selected", isMatch ? "true" : "false");
+  });
+
+  activeModule = normalized;
+
+  if (options.updateHash !== false) {
+    const params = new URLSearchParams(window.location.search);
+    const query = params.toString();
+    const hash = `#${normalized}`;
+    const newUrl = `${window.location.pathname}${query ? `?${query}` : ""}${hash}`;
+    window.history.replaceState({}, "", newUrl);
+  }
+
+  const scrollTarget = matchedSections[0];
+  if (options.scroll !== false && scrollTarget) {
+    scrollTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function initModuleTabs() {
+  moduleTriggers = Array.from(document.querySelectorAll("[data-module-target]"));
+  moduleSections = Array.from(document.querySelectorAll(".module-section"));
+  navModuleTriggers = moduleTriggers.filter((trigger) => trigger.closest(".navigation"));
+
+  if (!moduleTriggers.length || !moduleSections.length) {
+    return;
+  }
+
+  document.body.classList.add("modules-ready");
+
+  moduleSections.forEach((section) => {
+    section.classList.remove("is-active");
+    section.setAttribute("role", "tabpanel");
+    section.setAttribute("aria-hidden", "true");
+  });
+
+  navModuleTriggers.forEach((trigger) => {
+    trigger.setAttribute("role", "tab");
+    trigger.setAttribute("aria-selected", "false");
+    const moduleName = trigger.dataset.moduleTarget;
+    const controlled = moduleSections.find((section) => section.dataset.module === moduleName);
+    if (controlled?.id) {
+      trigger.setAttribute("aria-controls", controlled.id);
+    }
+  });
+
+  moduleTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", (event) => {
+      if (!(trigger instanceof HTMLAnchorElement)) return;
+      const targetModule = trigger.dataset.moduleTarget;
+      if (!targetModule) return;
+      event.preventDefault();
+      activateModule(targetModule, { scroll: true });
+    });
+  });
+
+  const fromHash = window.location.hash?.replace(/^#/, "") ?? "";
+  const initialTrigger =
+    moduleTriggers.find((trigger) => trigger.dataset.moduleTarget === fromHash) ??
+    navModuleTriggers[0] ??
+    moduleTriggers[0];
+  const initialModule = initialTrigger?.dataset.moduleTarget;
+  if (initialModule) {
+    activateModule(initialModule, { scroll: false, updateHash: !!fromHash });
+  }
 }
 
 function initNavigation() {
@@ -267,6 +370,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initAnalytics();
 
   bindFilters();
+  initModuleTabs();
 
   const cacheBuster =
     document.documentElement.dataset.eventVersion ?? String(Date.now());

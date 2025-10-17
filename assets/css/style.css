@@ -365,6 +365,19 @@ a:focus {
   text-decoration: none;
 }
 
+.modules-ready .module-section {
+  display: none;
+}
+
+.modules-ready .module-section.is-active {
+  display: block;
+}
+
+.navigation a.is-active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .fact-box {
   background: rgba(15, 23, 42, 0.6);
   border: 1px solid rgba(249, 115, 22, 0.2);
