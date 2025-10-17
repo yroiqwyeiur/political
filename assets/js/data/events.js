@@ -125,5 +125,92 @@ export const eventData = [
         sources: [{ label: "新华社通稿", url: "#" }]
       }
     }
+  },
+  {
+    id: "evt-006",
+    datetime: "2022-10-13T10:00:00+08:00",
+    heat: 94,
+    locales: {
+      en: {
+        title: "Sitong Bridge Banner Protest",
+        location: "Sitong Bridge, Beijing",
+        categories: ["Individual resistance", "Zero-COVID dissent"],
+        summary:
+          "Peng Lifa unfurled banners calling for food, freedom, and elections, breaking through Beijing's censorship curtain days before the 20th Party Congress.",
+        sources: [
+          { label: "BBC profile", url: "#" },
+          { label: "The Guardian timeline", url: "#" }
+        ]
+      },
+      "zh-CN": {
+        title: "四通桥横幅抗议",
+        location: "北京四通桥",
+        categories: ["个人反抗", "清零政策抗议"],
+        summary:
+          "彭立发悬挂横幅呼吁要吃饭、要自由、要选票，在二十大前夕突破首都严密审查。",
+        sources: [
+          { label: "BBC 报道", url: "#" },
+          { label: "卫报时间线", url: "#" }
+        ]
+      }
+    }
+  },
+  {
+    id: "evt-007",
+    datetime: "2019-12-30T21:15:00+08:00",
+    heat: 91,
+    locales: {
+      en: {
+        title: "Dr. Li Wenliang's COVID Warning",
+        location: "Wuhan Central Hospital",
+        categories: ["Individual resistance", "Whistleblowing"],
+        summary:
+          "Li Wenliang alerted colleagues to a SARS-like outbreak and refused to recant despite police reprimands, sparking nationwide outrage after his death.",
+        sources: [
+          { label: "Caixin investigation", url: "#" },
+          { label: "The Lancet obituary", url: "#" }
+        ]
+      },
+      "zh-CN": {
+        title: "李文亮医生的疫情预警",
+        location: "武汉市中心医院",
+        categories: ["个人反抗", "吹哨行动"],
+        summary:
+          "李文亮向同行发出类 SARS 疫情警报，遭警方训诫仍坚持求真，其离世引发全国哀悼与愤慨。",
+        sources: [
+          { label: "财新调查", url: "#" },
+          { label: "柳叶刀讣告", url: "#" }
+        ]
+      }
+    }
+  },
+  {
+    id: "evt-008",
+    datetime: "2020-02-09T12:30:00+08:00",
+    heat: 88,
+    locales: {
+      en: {
+        title: "Citizen Journalist Zhang Zhan Detained",
+        location: "Shanghai Detention Center",
+        categories: ["Individual resistance", "Citizen journalism"],
+        summary:
+          "Former lawyer Zhang Zhan livestreamed from Wuhan during the outbreak, documenting hospital backlogs before being detained and force-fed during hunger strikes.",
+        sources: [
+          { label: "Amnesty International briefing", url: "#" },
+          { label: "AP coverage", url: "#" }
+        ]
+      },
+      "zh-CN": {
+        title: "公民记者张展被捕",
+        location: "上海看守所",
+        categories: ["个人反抗", "公民记者"],
+        summary:
+          "前律师张展深入武汉直播疫情拥挤医院与街头实况，后遭拘押并在绝食时被强行灌食。",
+        sources: [
+          { label: "国际特赦组织简报", url: "#" },
+          { label: "美联社报道", url: "#" }
+        ]
+      }
+    }
   }
 ];
