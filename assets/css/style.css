@@ -258,6 +258,44 @@ a:focus {
   border-radius: 8px;
 }
 
+.analysis-grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.analysis-card {
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.analysis-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.analysis-card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.analysis-points {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--text);
+}
+
+.analysis-points li::marker {
+  color: var(--accent);
+}
+
 .fact-box {
   background: rgba(15, 23, 42, 0.6);
   border: 1px solid rgba(249, 115, 22, 0.2);

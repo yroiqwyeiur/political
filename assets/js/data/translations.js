@@ -41,8 +41,29 @@ export const translations = {
     "law.body":
       "Behind the slogan of \"rule by law\" lies a reality governed by Party regulations. Citizens—and Party members themselves—are ranked and sorted, determining treatment in life and even posthumous honors. The state operates outside the law; administrative orders and secret directives routinely override written statutes.",
     "law.points.1": "Disciplinary regime: CCDI and supervisory commissions dictate investigation rhythms.",
-    "law.points.2": "Fragmented law: a non-independent judiciary obeys Party committees.",
-    "law.points.3": "Administrative fiat: stability directives can strip citizens' rights at will.",
+   "law.points.2": "Fragmented law: a non-independent judiciary obeys Party committees.",
+   "law.points.3": "Administrative fiat: stability directives can strip citizens' rights at will.",
+    "law.analysis.1.title": "Discipline operates as the real constitution",
+    "law.analysis.1.body":
+      "Party discipline is written in confidential handbooks, yet it overrides national law in practice. The CCDI and National Supervisory Commission fuse Party and state power, expanding shuanggui/liuzhi detention that keeps suspects off the books and outside judicial review.",
+    "law.analysis.1.point1":
+      "Cadres accept inspections without counsel; any rights claim is branded as resisting organisation review.",
+    "law.analysis.1.point2":
+      "Outcomes feed cadre files, deciding promotions, demotions, even funeral treatment for family members.",
+    "law.analysis.2.title": "Courts mirror Party committees, not statutes",
+    "law.analysis.2.body":
+      "Every court president sits on a Party committee and must obey trial guidance before verdicts are drafted. Sensitive cases are pushed to adjudication committees where political loyalty, not evidence, settles the outcome.",
+    "law.analysis.2.point1":
+      "Internal directives—often oral—decide who can file, who can appeal, and which lawyers may appear.",
+    "law.analysis.2.point2":
+      "Legal reforms emphasise integration of politics and law, erasing the independence promised in the constitution.",
+    "law.analysis.3.title": "Stability maintenance suspends rights on demand",
+    "law.analysis.3.body":
+      "Weiwen commands operate as emergency decrees without public scrutiny. Petitioners, homeowners, and online commentators are indexed as risk targets, triggering secret blacklists, exit bans, and forced psychiatric detention.",
+    "law.analysis.3.point1":
+      "Police deploy extralegal measures—soft detention, residential surveillance, community grid control—under quota pressure.",
+    "law.analysis.3.point2":
+      "Stability funds finance private thugs and surveillance tech; victims rarely find a court or agency willing to register complaints.",
     "law.fact.title": "System snapshot",
     "law.fact.keyInstitutions": "Key bodies",
     "law.fact.keyInstitutions.value":
@@ -151,8 +172,23 @@ export const translations = {
     "law.body":
       "“依法治国”口号下隐藏的是党规覆盖一切的现实。民众被划分三六九等，党内更是层层等级，决定生前待遇与死后追认。国家机器在法治外运作，行政命令、秘密指示常常压倒成文法律。",
     "law.points.1": "党纪体系——中纪委、监委等直接控制问责节奏。",
-    "law.points.2": "法律碎片化——司法不独立，法院服从党委领导。",
-    "law.points.3": "行政命令凌驾——维稳指令可随意剥夺公民权利。",
+   "law.points.2": "法律碎片化——司法不独立，法院服从党委领导。",
+   "law.points.3": "行政命令凌驾——维稳指令可随意剥夺公民权利。",
+    "law.analysis.1.title": "党纪运作成了真正的宪法",
+    "law.analysis.1.body":
+      "党纪写入内部手册，却在现实中凌驾国家法律。中纪委与国家监委合署扩张双规/留置，让被查者脱离司法体系，无法获得司法审查。",
+    "law.analysis.1.point1": "被查官员不得请律师，任何主张权利都会被定性为对抗组织审查。",
+    "law.analysis.1.point2": "处理结果进入干部档案，决定升迁降级，甚至影响亲属的丧葬待遇。",
+    "law.analysis.2.title": "法院听命于党委而非法条",
+    "law.analysis.2.body":
+      "每位法院院长都在党委体系内，判决成文前必须执行“审判指导”。敏感案件被拿到审判委员会，以政治站队而非证据定胜负。",
+    "law.analysis.2.point1": "大量内部指令以口头传达决定谁能立案、谁能上诉、哪位律师可以出庭。",
+    "law.analysis.2.point2": "所谓司法改革强调政法融合，宪法承诺的独立审判权被彻底掏空。",
+    "law.analysis.3.title": "维稳体系随时暂停公民权利",
+    "law.analysis.3.body":
+      "维稳命令像紧急法令却从不公开。访民、业主、网民被列入风险清单，随时触发黑名单、限制出境或强制送医。",
+    "law.analysis.3.point1": "公安在考核压力下动用软禁、指定居所监视居住、网格化管控等法外措施。",
+    "law.analysis.3.point2": "维稳经费养活保安黑手与监控科技，受害者几乎找不到愿意立案的机关。",
     "law.fact.title": "制度速览",
     "law.fact.keyInstitutions": "关键机构",
     "law.fact.keyInstitutions.value": "中共中央政法委、国家监委、中央政法委员会",
