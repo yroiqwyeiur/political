@@ -1,5 +1,4 @@
 import { translations } from "./data/translations.js";
-import { eventData } from "./data/events.js";
 import { I18n } from "./i18n.js";
 import { initAnalytics, trackEvent, trackPageView } from "./analytics.js";
 
@@ -7,6 +6,7 @@ const DEFAULT_LOCALE = document.documentElement.dataset.defaultLocale || "en";
 const STORAGE_KEY = "pnp-preferred-locale";
 const i18n = new I18n(translations, DEFAULT_LOCALE);
 
+let rawEventData = [];
 const categorySelect = document.getElementById("category");
 const sortSelect = document.getElementById("sort");
 const searchInput = document.getElementById("search");
@@ -48,7 +48,7 @@ function getInitialLocale() {
 }
 
 function updateLocalizedEvents(locale) {
-  localizedEvents = eventData.map((event) => {
+  localizedEvents = rawEventData.map((event) => {
     const localeData = event.locales[locale] ?? event.locales[DEFAULT_LOCALE];
     return {
       id: event.id,
@@ -229,12 +229,22 @@ function setLocale(locale) {
   return resolved;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   initNavigation();
   initAnalytics();
 
-  const initialLocale = getInitialLocale();
   bindFilters();
+
+  const cacheBuster =
+    document.documentElement.dataset.eventVersion ?? String(Date.now());
+
+  try {
+    const module = await import(`./data/events.js?v=${cacheBuster}`);
+    rawEventData = Array.isArray(module.eventData) ? module.eventData : [];
+  } catch (err) {
+    console.error("Failed to load event data", err);
+    rawEventData = [];
+  }
 
   if (languageSwitcher) {
     languageSwitcher.addEventListener("change", (event) => {
@@ -245,5 +255,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const initialLocale = getInitialLocale();
   setLocale(initialLocale);
 });
