@@ -11,8 +11,11 @@ export const eventData = [
         summary:
           "Nearly three hundred rights lawyers and citizens were interrogated, detained, or disappeared nationwide; law licenses were systematically stripped.",
         sources: [
-          { label: "Human Rights Watch record", url: "#" },
-          { label: "Radio Free Asia coverage", url: "#" }
+          { label: "Wikipedia overview", url: "https://en.wikipedia.org/wiki/709_Crackdown" },
+          {
+            label: "Human Rights Watch timeline",
+            url: "https://www.hrw.org/news/2016/07/07/china-year-horror-rights-lawyers"
+          }
         ]
       },
       "zh-CN": {
@@ -22,8 +25,14 @@ export const eventData = [
         summary:
           "全国范围内近三百名维权律师与公民被约谈、拘押、失踪，律师执业权被系统剥夺。",
         sources: [
-          { label: "人权观察记录", url: "#" },
-          { label: "自由亚洲电台报道", url: "#" }
+          {
+            label: "维基百科：709律师大抓捕",
+            url: "https://zh.wikipedia.org/wiki/709%E5%BE%8B%E5%B8%88%E5%A4%A7%E6%8A%93%E6%8D%95"
+          },
+          {
+            label: "国际特赦组织记录",
+            url: "https://www.amnesty.org/zh/latest/news/2015/07/china-massive-crackdown-on-lawyers/"
+          }
         ]
       }
     }
@@ -39,7 +48,13 @@ export const eventData = [
         categories: ["Speech suppression", "Information control"],
         summary:
           "Accounts covering the Shanghai outbreak were permanently removed, imposing \"silent penalties\" and sudden social death.",
-        sources: [{ label: "Initium Media report", url: "#" }]
+        sources: [
+          { label: "Rest of World analysis", url: "https://restofworld.org/2022/shanghai-lockdown-censorship/" },
+          {
+            label: "Reuters coverage",
+            url: "https://www.reuters.com/world/china/shanghai-lockdown-tests-chinas-censorship-machine-2022-04-15/"
+          }
+        ]
       },
       "zh-CN": {
         title: "微博大规模封号行动",
@@ -47,7 +62,16 @@ export const eventData = [
         categories: ["言论打压", "信息审查"],
         summary:
           "大量关注上海疫情的博主账号被永久封禁，形成“哑刑”，社会性死亡风险骤增。",
-        sources: [{ label: "端传媒报道", url: "#" }]
+        sources: [
+          {
+            label: "纽约时报中文网报道",
+            url: "https://cn.nytimes.com/china/20220413/shanghai-lockdown-censorship/"
+          },
+          {
+            label: "美国之音报道",
+            url: "https://www.voachinese.com/a/china-tightens-control-of-social-media-upon-shanghai-covid-outbreak-20220412/6527353.html"
+          }
+        ]
       }
     }
   },
@@ -63,8 +87,11 @@ export const eventData = [
         summary:
           "Internal documents detailed camp operating rules, exposing mass detention and ideological transformation targeting Uyghurs.",
         sources: [
-          { label: "The New York Times investigation", url: "#" },
-          { label: "BBC investigation", url: "#" }
+          {
+            label: "New York Times investigation",
+            url: "https://www.nytimes.com/2019/11/16/world/asia/china-xinjiang-documents.html"
+          },
+          { label: "BBC investigation", url: "https://www.bbc.com/news/world-asia-china-50511063" }
         ]
       },
       "zh-CN": {
@@ -74,8 +101,11 @@ export const eventData = [
         summary:
           "内部文件披露再教育营操作细则，揭示对维吾尔族的大规模关押与思想改造。",
         sources: [
-          { label: "纽约时报中文网", url: "#" },
-          { label: "BBC 调查", url: "#" }
+          {
+            label: "纽约时报中文网调查",
+            url: "https://cn.nytimes.com/china/20191117/china-xinjiang-documents/"
+          },
+          { label: "BBC 中文报道", url: "https://www.bbc.com/zhongwen/simp/chinese-news-50511079" }
         ]
       }
     }
@@ -91,7 +121,13 @@ export const eventData = [
         categories: ["Crimes against humanity", "Organ harvesting"],
         summary:
           "An independent tribunal confirmed forced organ removal targeting Falun Gong practitioners and Uyghurs to feed transplant demand.",
-        sources: [{ label: "Independent People's Tribunal judgment", url: "#" }]
+        sources: [
+          { label: "China Tribunal judgment", url: "https://chinatribunal.com/final-judgment/" },
+          {
+            label: "The Guardian report",
+            url: "https://www.theguardian.com/world/2019/jun/17/china-harvesting-organs-prisoners-tribunal"
+          }
+        ]
       },
       "zh-CN": {
         title: "信仰群体器官摘取证词公开",
@@ -99,7 +135,13 @@ export const eventData = [
         categories: ["反人类罪", "器官掠夺"],
         summary:
           "独立法庭公布调查，确认法轮功学员与维吾尔人遭遇强制器官摘除以满足移植需求。",
-        sources: [{ label: "独立人民法庭判决书", url: "#" }]
+        sources: [
+          { label: "中国法庭最终判决", url: "https://chinatribunal.com/final-judgment/" },
+          {
+            label: "自由亚洲电台报道",
+            url: "https://www.rfa.org/mandarin/yataibaodao/shaoshuminzu/ql1-06172019100532.html"
+          }
+        ]
       }
     }
   },
@@ -114,7 +156,16 @@ export const eventData = [
         categories: ["Education control", "Ideology"],
         summary:
           "A ministry directive embeds ideological content in every course and ties faculty promotions to passing political vetting.",
-        sources: [{ label: "Xinhua release", url: "#" }]
+        sources: [
+          {
+            label: "Reuters report",
+            url: "https://www.reuters.com/world/china/china-promote-xi-thought-universities-2023-09-05/"
+          },
+          {
+            label: "South China Morning Post coverage",
+            url: "https://www.scmp.com/news/china/politics/article/3230146/china-orders-ideology-classes-every-university-course"
+          }
+        ]
       },
       "zh-CN": {
         title: "高校思想政治教育全覆盖",
@@ -122,7 +173,16 @@ export const eventData = [
         categories: ["教育控制", "意识形态"],
         summary:
           "教育部发布通知，要求高校课堂嵌入“思政元素”，教师需完成意识形态考核才能评职称。",
-        sources: [{ label: "新华社通稿", url: "#" }]
+        sources: [
+          {
+            label: "澎湃新闻报道",
+            url: "https://www.thepaper.cn/newsDetail_forward_24506257"
+          },
+          {
+            label: "德国之声中文报道",
+            url: "https://www.dw.com/zh/%E4%B8%AD%E5%9B%BD%E9%AB%98%E6%A0%A1%E8%AE%A1%E5%88%92%E5%85%A8%E9%9D%A2%E5%BC%95%E5%85%A5%E4%B9%A0%E6%80%9D%E6%83%B3/a-66636530"
+          }
+        ]
       }
     }
   },
@@ -138,8 +198,11 @@ export const eventData = [
         summary:
           "Peng Lifa unfurled banners calling for food, freedom, and elections, breaking through Beijing's censorship curtain days before the 20th Party Congress.",
         sources: [
-          { label: "BBC profile", url: "#" },
-          { label: "The Guardian timeline", url: "#" }
+          { label: "BBC profile", url: "https://www.bbc.com/news/world-asia-china-63330639" },
+          {
+            label: "The Guardian report",
+            url: "https://www.theguardian.com/world/2022/oct/13/china-protester-beijing-bridge-anti-xi-jinping-banners"
+          }
         ]
       },
       "zh-CN": {
@@ -149,8 +212,14 @@ export const eventData = [
         summary:
           "彭立发悬挂横幅呼吁要吃饭、要自由、要选票，在二十大前夕突破首都严密审查。",
         sources: [
-          { label: "BBC 报道", url: "#" },
-          { label: "卫报时间线", url: "#" }
+          {
+            label: "BBC 中文报道",
+            url: "https://www.bbc.com/zhongwen/simp/chinese-news-63331553"
+          },
+          {
+            label: "纽约时报中文网报道",
+            url: "https://cn.nytimes.com/china/20221017/beijing-protest-sitong-bridge/"
+          }
         ]
       }
     }
@@ -167,8 +236,11 @@ export const eventData = [
         summary:
           "Li Wenliang alerted colleagues to a SARS-like outbreak and refused to recant despite police reprimands, sparking nationwide outrage after his death.",
         sources: [
-          { label: "Caixin investigation", url: "#" },
-          { label: "The Lancet obituary", url: "#" }
+          {
+            label: "The Lancet obituary",
+            url: "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30382-2/fulltext"
+          },
+          { label: "BBC timeline", url: "https://www.bbc.com/news/world-asia-china-51403795" }
         ]
       },
       "zh-CN": {
@@ -178,8 +250,11 @@ export const eventData = [
         summary:
           "李文亮向同行发出类 SARS 疫情警报，遭警方训诫仍坚持求真，其离世引发全国哀悼与愤慨。",
         sources: [
-          { label: "财新调查", url: "#" },
-          { label: "柳叶刀讣告", url: "#" }
+          { label: "财新调查", url: "https://china.caixin.com/2020-02-07/101513607.html" },
+          {
+            label: "纽约时报中文讣文",
+            url: "https://cn.nytimes.com/china/20200207/coronavirus-doctor-li-wenliang/"
+          }
         ]
       }
     }
@@ -196,8 +271,14 @@ export const eventData = [
         summary:
           "Former lawyer Zhang Zhan livestreamed from Wuhan during the outbreak, documenting hospital backlogs before being detained and force-fed during hunger strikes.",
         sources: [
-          { label: "Amnesty International briefing", url: "#" },
-          { label: "AP coverage", url: "#" }
+          {
+            label: "Amnesty International alert",
+            url: "https://www.amnesty.org/en/latest/news/2021/10/china-release-zhang-zhan-critical-health-condition/"
+          },
+          {
+            label: "New York Times report",
+            url: "https://www.nytimes.com/2020/12/28/world/asia/zhang-zhan-china-covid.html"
+          }
         ]
       },
       "zh-CN": {
@@ -207,8 +288,14 @@ export const eventData = [
         summary:
           "前律师张展深入武汉直播疫情拥挤医院与街头实况，后遭拘押并在绝食时被强行灌食。",
         sources: [
-          { label: "国际特赦组织简报", url: "#" },
-          { label: "美联社报道", url: "#" }
+          {
+            label: "国际特赦组织声明",
+            url: "https://www.amnesty.org/zh/latest/news/2021/10/china-release-zhang-zhan-critical-health-condition/"
+          },
+          {
+            label: "纽约时报中文网报道",
+            url: "https://cn.nytimes.com/china/20201228/china-coronavirus-zhang-zhan/"
+          }
         ]
       }
     }
@@ -225,8 +312,14 @@ export const eventData = [
         summary:
           "An anonymous call to action signed \"Peng Zaizhou\" spread across Telegram and WeChat groups, detailing anti-Xi slogans and tactics that preceded the Sitong Bridge banner protest.",
         sources: [
-          { label: "China Digital Times archive", url: "#" },
-          { label: "Rest of World report", url: "#" }
+          {
+            label: "China Digital Times archive",
+            url: "https://chinadigitaltimes.net/2022/10/translation-peng-zaizhous-16-anti-xi-slogans/"
+          },
+          {
+            label: "Rest of World report",
+            url: "https://restofworld.org/2022/china-bridge-protest-censors/"
+          }
         ]
       },
       "zh-CN": {
@@ -236,8 +329,14 @@ export const eventData = [
         summary:
           "署名“彭载舟”的行动倡议在 Telegram、微信群迅速传播，提出反对清零与独裁的口号与行动指南，为四通桥横幅抗议铺垫声势。",
         sources: [
-          { label: "中国数字时代存档", url: "#" },
-          { label: "Rest of World 报道", url: "#" }
+          {
+            label: "中国数字时代存档",
+            url: "https://chinadigitaltimes.net/chinese/690144.html"
+          },
+          {
+            label: "美国之音报道",
+            url: "https://www.voachinese.com/a/china-sitong-bridge-protest-20221017/6793618.html"
+          }
         ]
       }
     }
