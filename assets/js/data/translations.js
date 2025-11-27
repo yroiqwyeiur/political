@@ -138,6 +138,32 @@ export const translations = {
     "education.fact.body":
       "Key historical episodes vanish from textbooks; unified exams and honor systems enforce a single value set.",
     "education.fact.more": "Timeline of textbook revisions (in progress)",
+    "education.tiers.preschool.title": "Kindergarten and preschool drills",
+    "education.tiers.preschool.body":
+      "Patriotic songs and “Little Red” rituals begin before literacy. Play-based learning is replaced with loyalty pledges that define dissent as betrayal.",
+    "education.tiers.preschool.point1": "Picture books erase famine, purges, or protests; only heroes remain.",
+    "education.tiers.preschool.point2": "Teachers face inspections for “incorrect expressions,” so curiosity is redirected to model answers.",
+    "education.tiers.primary.title": "Primary school re-editing of facts",
+    "education.tiers.primary.body":
+      "Unified textbooks frame Party leadership as the only source of rights. Political homework and red scarf ceremonies sort “obedient” and “problem” families.",
+    "education.tiers.primary.point1": "History units jump from imperial humiliation to “national rejuvenation,” removing civil war atrocities.",
+    "education.tiers.primary.point2": "Teacher evaluations reward public denunciations of “bad speech” spotted in students’ homes.",
+    "education.tiers.secondary.title": "Exam-era obedience",
+    "education.tiers.secondary.body":
+      "Middle and high schools become test factories for ideology modules. Debate clubs and independent publications are dismantled in the name of “campus security.”",
+    "education.tiers.secondary.point1": "Politics exam questions demand rote slogans; alternative framing is marked as hostile.",
+    "education.tiers.secondary.point2": "Psychological files record “negative online speech,” limiting future college majors.",
+    "education.tiers.university.title": "Universities under Party secretaries",
+    "education.tiers.university.body":
+      "Every campus installs Party secretaries above presidents. Ideology counselors sit in dorms, while security bureaus embed police stations on-site.",
+    "education.tiers.university.point1":
+      "Student associations must take “political instructors,” and petitions trigger mandatory thought reports.",
+    "education.tiers.university.point2": "Scholars lose grants for referencing taboo archives; entire majors are shuttered for “incorrect direction.”",
+    "education.tiers.informal.title": "Vocational, party, and online extensions",
+    "education.tiers.informal.body":
+      "Party schools, cadre academies, and patriotic apps continue the same syllabus into adulthood, ensuring workplaces echo classroom discipline.",
+    "education.tiers.informal.point1": "“Xi Study” apps track daily time spent learning doctrine, with work bonuses tied to streaks.",
+    "education.tiers.informal.point2": "Vocational colleges must run military drills and Party lectures before technical content.",
     "victims.title": "Persecuted groups: confronting lived destinies",
     "victims.body":
       "People from every background face the same deprivation: rights lawyers, religious believers, ethnic minorities, advocates for free expression. They are silenced, disappeared, detained, and subjected to torture—even organ harvesting.",
@@ -298,6 +324,31 @@ export const translations = {
     "education.fact.title": "被操控的记忆",
     "education.fact.body": "关键历史事件在课本中被淡化或消失，学生通过统一考试、荣誉体系被迫接受单一价值观。",
     "education.fact.more": "查看教材演变年表（建设中）",
+    "education.tiers.preschool.title": "幼儿园：童谣里的政治操练",
+    "education.tiers.preschool.body":
+      "学龄前课程用红歌、升旗与宣誓取代理应存在的探索游戏，“忠诚”成为儿童接触教育的第一课。",
+    "education.tiers.preschool.point1": "绘本删去饥荒、清洗、抗议，只剩“伟人故事”与口号。",
+    "education.tiers.preschool.point2": "老师一旦被指“表述不当”就受处分，只能把孩子的好奇扭回标准答案。",
+    "education.tiers.primary.title": "小学：统一教材重写历史",
+    "education.tiers.primary.body":
+      "全国版教材强调“党领导赋予一切权利”，政治作业与红领巾仪式把“听话”与“问题家庭”区分出来。",
+    "education.tiers.primary.point1": "历史叙述从帝国屈辱直接跳到“民族复兴”，内战与政治迫害被删除。",
+    "education.tiers.primary.point2": "教师考核鼓励公开举报学生家中发现的“错误言论”，恐惧从教室蔓延到客厅。",
+    "education.tiers.secondary.title": "初高中：考试机器化思维",
+    "education.tiers.secondary.body":
+      "中学成为政教考试工厂，辩论社、校园刊物被以“安保”为名取缔，学生只被允许背诵。",
+    "education.tiers.secondary.point1": "政治试题要求逐字复述口号，任何换句表述都会被判为敌对倾向。",
+    "education.tiers.secondary.point2": "心理档案记录“负面上网言论”，直接决定大学专业与政审结果。",
+    "education.tiers.university.title": "大学：书记压顶的校园",
+    "education.tiers.university.body":
+      "每所高校都由党委书记压过校长，辅导员常驻宿舍，派出所进驻校园，学术空间被行政管控。",
+    "education.tiers.university.point1": "学生社团必须配备“政治指导老师”，连联署请愿都要写思想检讨。",
+    "education.tiers.university.point2": "涉及敏感档案的研究会被撤题或撤经费，专业随时因为“导向错误”被关停。",
+    "education.tiers.informal.title": "职教、党校与线上延伸",
+    "education.tiers.informal.body":
+      "党校、干部学院与爱国 App 把相同课程延伸到成人世界，职场继续复制课堂上的服从结构。",
+    "education.tiers.informal.point1": "“学习强国”等平台记录每日学时，绩效奖金绑在“学习打卡”上。",
+    "education.tiers.informal.point2": "职业院校必须先上军训和党课，再讲技术，工厂学徒也要集体背诵政治条款。",
     "victims.title": "受迫害人群：看见真实命运",
     "victims.body":
       "不同身份的人在同一体系下遭遇一样的剥夺：维权律师、宗教信徒、民族群体、言论自由倡导者……他们被噤声、失踪、监禁，甚至遭遇器官掠夺。",
