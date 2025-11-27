@@ -42,7 +42,30 @@ export const translations = {
       "Behind the slogan of \"rule by law\" lies a reality governed by Party regulations. Citizens—and Party members themselves—are ranked and sorted, determining treatment in life and even posthumous honors. The state operates outside the law; administrative orders and secret directives routinely override written statutes.",
     "law.points.1": "Disciplinary regime: CCDI and supervisory commissions dictate investigation rhythms.",
    "law.points.2": "Fragmented law: a non-independent judiciary obeys Party committees.",
-   "law.points.3": "Administrative fiat: stability directives can strip citizens' rights at will.",
+    "law.points.3": "Administrative fiat: stability directives can strip citizens' rights at will.",
+    "law.rights.title": "Rights defense blocked at every stage",
+    "law.rights.body":
+      "Political vetting, filing walls, and criminalised procedures ensure citizens cannot use courts to defend themselves. Each checkpoint is controlled by Party committees that can pause, redirect, or weaponize the law.",
+    "law.rights.licensing.title": "Licensing choke points",
+    "law.rights.licensing.body":
+      "Annual inspections and ideological exams determine whether a lawyer may work. Rights defenders are labelled “negative” and stripped of practice certificates before a case is even filed.",
+    "law.rights.licensing.point1": "Bar admission requires background checks on entire families; a single petition record blocks entry.",
+    "law.rights.licensing.point2": "Justice bureaus can raid firms and force collective “self-criticism” to retain operating permits.",
+    "law.rights.filing.title": "Case-filing walls",
+    "law.rights.filing.body":
+      "Courts run dual dockets: public e-systems and secret “sensitive case” queues. Complaints about land grabs, police abuse, or religion are bounced to petition offices instead of being registered.",
+    "law.rights.filing.point1": "“Guided mediation” rooms trap petitioners until they sign waivers, leaving no case number to appeal.",
+    "law.rights.filing.point2": "Adjudication committees can erase filings retroactively, voiding evidence and deadlines.",
+    "law.rights.detention.title": "Criminalising the defender",
+    "law.rights.detention.body":
+      "Residents who insist on due process are placed under Residential Surveillance at a Designated Location (RSDL) or charged with “picking quarrels,” eliminating access to counsel.",
+    "law.rights.detention.point1": "RSDL allows six months of secret detention with no lawyer visit; confessions recorded inside dominate trials.",
+    "law.rights.detention.point2": "Lawyers who contest torture evidence are themselves disbarred or prosecuted for “leaking secrets.”",
+    "law.rights.retaliation.title": "Administrative retaliation",
+    "law.rights.retaliation.body":
+      "Even after court defeat, authorities can freeze assets, ban travel, or list citizens on credit blacklists, preventing further litigation and intimidating supporters.",
+    "law.rights.retaliation.point1": "Court enforcement bureaus share data with police to suspend IDs, driver’s licenses, and online accounts.",
+    "law.rights.retaliation.point2": "Community grids monitor those who sue the state, issuing “soft detention” orders with no expiration.",
     "law.analysis.1.title": "Discipline operates as the real constitution",
     "law.analysis.1.body":
       "Party discipline is written in confidential handbooks, yet it overrides national law in practice. The CCDI and National Supervisory Commission fuse Party and state power, expanding shuanggui/liuzhi detention that keeps suspects off the books and outside judicial review.",
@@ -245,6 +268,29 @@ export const translations = {
     "law.points.1": "党纪体系——中纪委、监委等直接控制问责节奏。",
    "law.points.2": "法律碎片化——司法不独立，法院服从党委领导。",
    "law.points.3": "行政命令凌驾——维稳指令可随意剥夺公民权利。",
+    "law.rights.title": "维权流程被逐级卡死",
+    "law.rights.body":
+      "从政治审查、立案墙到程序犯罪化，公民无法借助法院维护权利。每个关口都由党委或综治机构掌控，放行或卡死取决于政治考量。",
+    "law.rights.licensing.title": "执业许可卡点",
+    "law.rights.licensing.body":
+      "年度考核与政治考试决定律师能否执业。维权律师被贴“负面”标签，在案件立案前就被吊销执照。",
+    "law.rights.licensing.point1": "准入审查要调查整个家庭背景，一次信访记录就足以把人挡在门外。",
+    "law.rights.licensing.point2": "司法局可突袭律所，逼迫集体检讨才能续批业务许可证。",
+    "law.rights.filing.title": "立案墙与双轨案卷",
+    "law.rights.filing.body":
+      "法院运行公开电子系统与秘密“重点案件”队列。涉及土地、警暴、宗教的起诉被转入信访室，不给案号也不受理。",
+    "law.rights.filing.point1": "“指导调解”室软禁当事人，逼其签署放弃起诉协议，因无案号无法上诉。",
+    "law.rights.filing.point2": "审判委员会可事后撤销已立案件，证据与程序期限全部失效。",
+    "law.rights.detention.title": "把维权者定罪",
+    "law.rights.detention.body":
+      "坚持走法律程序的居民被投入指定居所监视居住或以“寻衅滋事”起诉，律师会见被完全剥夺。",
+    "law.rights.detention.point1": "指定居所监视居住最长 6 个月，秘密录制的供述成了唯一证据。",
+    "law.rights.detention.point2": "揭露酷刑的律师会被吊销执照，甚至因“泄密”被刑拘。",
+    "law.rights.retaliation.title": "行政报复链",
+    "law.rights.retaliation.body":
+      "即便案件结束，政府仍可冻结资产、禁止出境，把维权者列入征信黑名单，进一步阻断维权。",
+    "law.rights.retaliation.point1": "法院执行局与公安共享数据，随时暂停身份证、驾照、网络账号。",
+    "law.rights.retaliation.point2": "社区网格对起诉政府者下“软禁令”，通常没有截止日期。",
     "law.analysis.1.title": "党纪运作成了真正的宪法",
     "law.analysis.1.body":
       "党纪写入内部手册，却在现实中凌驾国家法律。中纪委与国家监委合署扩张双规/留置，让被查者脱离司法体系，无法获得司法审查。",
