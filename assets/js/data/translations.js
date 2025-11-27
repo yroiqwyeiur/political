@@ -172,6 +172,8 @@ export const translations = {
     "getInvolved.points.1": "Provide first-hand evidence or vetted citations.",
     "getInvolved.points.2": "Join technical builds, data curation, or translation campaigns.",
     "getInvolved.points.3": "Help create overseas nodes and resilient backups.",
+    "getInvolved.contact.emailLabel": "Email:",
+    "getInvolved.contact.phoneLabel": "Phone:",
     "getInvolved.cta": "Contact the team",
     "footer.copy": "© 2024 Regime Logic Insight Platform · Document history, defend truth.",
     "footer.disclaimer":
@@ -328,6 +330,8 @@ export const translations = {
     "getInvolved.points.1": "提供第一手资料或可信引用。",
     "getInvolved.points.2": "参与技术开发、数据整理、翻译传播。",
     "getInvolved.points.3": "协助建立海外节点与备份网络。",
+    "getInvolved.contact.emailLabel": "邮箱：",
+    "getInvolved.contact.phoneLabel": "电话：",
     "getInvolved.cta": "联系团队",
     "footer.copy": "© 2024 政权逻辑揭示平台 · 记录历史，守护真相。",
     "footer.disclaimer": "本站信息来源于公开资料与亲历者证词，欢迎指正与补充。"
