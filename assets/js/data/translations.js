@@ -151,6 +151,29 @@ export const translations = {
     "military.points.1": "Chairman responsibility centralizes command in the top leader.",
     "military.points.2": "The Political Work Department saturates daily life with ideological control.",
     "military.points.3": "Militia, PAP, and police integration builds a nationwide repression network.",
+    "military.control.title": "Party control stack",
+    "military.control.body":
+      "The Central Military Commission commands every theater, service branch, and militia cell. Political commissars, discipline inspectors, and joint command centers ensure loyalty before combat readiness.",
+    "military.control.chairman.title": "Chairman responsibility system",
+    "military.control.chairman.body":
+      "The top leader doubles as CMC chairman and installs “leading small groups” over every strategy domain to bypass even the defense ministry.",
+    "military.control.chairman.point1": "Only the chairman can sign combat orders; vice chairs relay instructions down the joint staff chain.",
+    "military.control.chairman.point2": "CMC inspection teams raid units unannounced to check ideological dossiers, not training data.",
+    "military.control.political.title": "Political commissar lattice",
+    "military.control.political.body":
+      "Every formation has twin leaders: a commander and a political commissar who outranks or vetoes operational decisions in the name of Party discipline.",
+    "military.control.political.point1": "Commissars chair Party committees within brigades, approving promotions, awards, and publications.",
+    "military.control.political.point2": "Political work departments run surveillance on troops’ families and online speech.",
+    "military.control.joint.title": "Theater commands & domestic garrisons",
+    "military.control.joint.body":
+      "Five theater commands run joint operations but also coordinate domestic “war zones” for contingencies such as Hong Kong or Xinjiang crackdowns.",
+    "military.control.joint.point1": "Garrison commands in Hong Kong, Macau, and Xinjiang report directly to the CMC, bypassing local governments.",
+    "military.control.joint.point2": "Joint logistics hubs integrate civilian transport and telecom firms for rapid mobilization.",
+    "military.control.fusion.title": "Militia–PAP–police fusion",
+    "military.control.fusion.body":
+      "Urban militias, the People’s Armed Police, and public security bureaus share command posts, enabling nationwide deployment for protests or epidemics.",
+    "military.control.fusion.point1": "Provincial military districts assign militia quotas to factories and universities, tracking ideology files.",
+    "military.control.fusion.point2": "PAP now reports to the CMC and fields counter-terror, cyber, and “stability” brigades for domestic suppression.",
     "education.title": "Education system: manufacturing loyalty and amnesia",
     "education.body":
       "From kindergarten to university, textbooks revolve around Party narratives. Political vetting covers teachers and students alike; real history is deleted and critical thinking erased. Education becomes a governance tool to raise compliant citizens.",
@@ -364,6 +387,29 @@ export const translations = {
     "military.points.1": "军委主席负责制确保最高领导人垄断指挥权。",
     "military.points.2": "政治工作部渗入军队生活，思想控制是第一任务。",
     "military.points.3": "民兵、武警体系与公安联动，实现全国范围的高压维稳网络。",
+    "military.control.title": "党对军队的控制栈",
+    "military.control.body":
+      "中央军委统领各大战区、军种与民兵细胞，政委、纪检与联指中心先考察忠诚，再谈战斗力。",
+    "military.control.chairman.title": "军委主席负责制",
+    "military.control.chairman.body":
+      "最高领导人兼任军委主席，另设“领导小组”管控战略领域，甚至绕开国防部。",
+    "military.control.chairman.point1": "只有主席能签署作战命令，副主席沿联合参谋体系逐级传达。",
+    "military.control.chairman.point2": "军委巡视组突击检查部队，重点看思想档案而非训练数据。",
+    "military.control.political.title": "政委双首长体系",
+    "military.control.political.body":
+      "每个建制单位都由指挥员与政委双线领导，政委可随时以党纪名义否决军事决策。",
+    "military.control.political.point1": "政委主持旅团党委，决定晋升、表彰与出版内容。",
+    "military.control.political.point2": "政治工作部门监控官兵家庭与网络言论，形成连坐机制。",
+    "military.control.joint.title": "战区与国内驻军",
+    "military.control.joint.body":
+      "五大战区负责联合作战，也统筹香港、新疆等国内“战区”处置动乱或抗议。",
+    "military.control.joint.point1": "驻港、驻澳、驻疆部队绕开地方政府，直接向军委汇报。",
+    "military.control.joint.point2": "联勤枢纽整合民航、铁路与通信企业，实现快速征调。",
+    "military.control.fusion.title": "民兵-武警-公安一体化",
+    "military.control.fusion.body":
+      "城市民兵、武警与公安共用指挥席，随时可对抗议、疫情等情况展开全国性部署。",
+    "military.control.fusion.point1": "省军区向工厂、大学下达民兵指标，并同步审查思想档案。",
+    "military.control.fusion.point2": "武警归中央军委直接领导，设立特战、网络、维稳等专门旅压制国内社会。",
     "education.title": "教育体系：制造忠诚与遗忘",
     "education.body":
       "从幼儿园到大学，教材围绕党的叙事构建。政治审查覆盖教师与学生，真实历史被删减，批判性思维被抹杀。教育成为维系统治、塑造顺民的重要工具。",
