@@ -160,6 +160,9 @@ export const translations = {
     "education.fact.title": "Engineered memory",
     "education.fact.body":
       "Key historical episodes vanish from textbooks; unified exams and honor systems enforce a single value set.",
+    "education.fact.point1": "New textbook editions delete local protests, mass famines, and purge victims.",
+    "education.fact.point2": "Patriotic apps assign daily study quotas and rank entire classrooms.",
+    "education.fact.point3": "Entrance-exam politics sections punish any framing outside official slogans.",
     "education.fact.more": "Timeline of textbook revisions (in progress)",
     "education.tiers.preschool.title": "Kindergarten and preschool drills",
     "education.tiers.preschool.body":
@@ -369,6 +372,9 @@ export const translations = {
     "education.points.3": "留学生与交换项目被用来输出官方叙事。",
     "education.fact.title": "被操控的记忆",
     "education.fact.body": "关键历史事件在课本中被淡化或消失，学生通过统一考试、荣誉体系被迫接受单一价值观。",
+    "education.fact.point1": "新版教材删除地方抗争、大饥荒与政治清洗的受害者。",
+    "education.fact.point2": "爱国学习 App 规定每日打卡时长，并给班级统一排名。",
+    "education.fact.point3": "高考政治题一旦脱离官方口号表述，立刻被判“导向错误”。",
     "education.fact.more": "查看教材演变年表（建设中）",
     "education.tiers.preschool.title": "幼儿园：童谣里的政治操练",
     "education.tiers.preschool.body":

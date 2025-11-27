@@ -314,6 +314,18 @@ a:focus {
   color: var(--accent);
 }
 
+.fact-points {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  display: grid;
+  gap: 0.4rem;
+}
+
+.fact-points li::marker {
+  color: var(--accent);
+}
+
 .analysis-grid {
   margin-top: 2rem;
   display: grid;
