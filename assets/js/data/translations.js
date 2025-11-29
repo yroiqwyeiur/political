@@ -249,6 +249,9 @@ export const translations = {
     "getInvolved.points.3": "Help create overseas nodes and resilient backups.",
     "getInvolved.contact.emailLabel": "Email:",
     "getInvolved.contact.phoneLabel": "Phone:",
+    "getInvolved.contact.modalTitle": "Reach the core team securely",
+    "getInvolved.contact.modalBody":
+      "Use encrypted email or direct phone to share evidence, requests, or collaboration ideas. We prioritise safety for every message.",
     "getInvolved.cta": "Contact the team",
     "footer.copy": "© 2024 Regime Logic Insight Platform · Document history, defend truth.",
     "footer.disclaimer":
@@ -481,6 +484,9 @@ export const translations = {
     "getInvolved.points.3": "协助建立海外节点与备份网络。",
     "getInvolved.contact.emailLabel": "邮箱：",
     "getInvolved.contact.phoneLabel": "电话：",
+    "getInvolved.contact.modalTitle": "安全联系核心团队",
+    "getInvolved.contact.modalBody":
+      "请通过加密邮箱或电话分享证据、需求与合作想法，我们会优先保障信息安全并尽快回复。",
     "getInvolved.cta": "联系团队",
     "footer.copy": "© 2024 政权逻辑揭示平台 · 记录历史，守护真相。",
     "footer.disclaimer": "本站信息来源于公开资料与亲历者证词，欢迎指正与补充。"

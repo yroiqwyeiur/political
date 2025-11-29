@@ -314,6 +314,14 @@ a:focus {
   color: var(--accent);
 }
 
+.contact-actions {
+  margin-top: 2rem;
+}
+
+.contact-actions .btn {
+  min-width: 220px;
+}
+
 .fact-points {
   margin: 1rem 0 0;
   padding-left: 1.25rem;
@@ -357,6 +365,69 @@ a:focus {
 
 .military-points li::marker {
   color: var(--accent);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(4, 6, 17, 0.75);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 999;
+}
+
+.modal.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__dialog {
+  background: #0f172a;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 18px;
+  padding: 2rem;
+  width: min(420px, calc(100% - 2rem));
+  position: relative;
+  box-shadow: 0 30px 60px rgba(2, 6, 23, 0.6);
+}
+
+.modal__dialog h3 {
+  margin-top: 0;
+}
+
+.modal__dialog p {
+  color: var(--text-muted);
+}
+
+.modal__contact {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.modal__contact strong {
+  display: inline-block;
+  min-width: 80px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 .analysis-grid {

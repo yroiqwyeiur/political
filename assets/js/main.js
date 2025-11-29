@@ -340,6 +340,49 @@ function bindFilters() {
   sortSelect?.addEventListener("change", () => filterEvents(getLocale()));
 }
 
+function initContactModal() {
+  const modal = document.getElementById("contact-modal");
+  const trigger = document.querySelector("[data-contact-trigger]");
+  if (!modal || !trigger) return;
+
+  const closeButton = modal.querySelector("[data-modal-close]");
+  let lastFocusedElement = null;
+
+  const isOpen = () => modal.classList.contains("is-visible");
+
+  const openModal = () => {
+    if (isOpen()) return;
+    lastFocusedElement = document.activeElement;
+    modal.classList.add("is-visible");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    (closeButton ?? modal).focus();
+  };
+
+  const closeModal = () => {
+    if (!isOpen()) return;
+    modal.classList.remove("is-visible");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+    lastFocusedElement?.focus?.();
+  };
+
+  trigger.addEventListener("click", openModal);
+  closeButton?.addEventListener("click", closeModal);
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  });
+}
+
 function setLocale(locale) {
   const resolved = i18n.setLocale(locale);
   document.documentElement.lang = resolved;
@@ -368,6 +411,7 @@ function setLocale(locale) {
 document.addEventListener("DOMContentLoaded", async () => {
   initNavigation();
   initAnalytics();
+  initContactModal();
 
   bindFilters();
   initModuleTabs();
